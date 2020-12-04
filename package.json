@@ -1,0 +1,23 @@
+{
+  "name": "ansi_esc",
+  "version": "1.0.0",
+  "description": "ansi_esc",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wuguanxi",
+  "license": "ISC",
+  "dependencies": {
+    "jpeg-js": "^0.4.2",
+    "mkdirp": "^1.0.4",
+    "opencv4nodejs": "^5.6.0",
+    "single-line-log": "^1.1.2"
+  },
+  "opencv4nodejs": {
+    "disableAutoBuild": 1,
+    "opencvIncludeDir": "/usr/local/Cellar/opencv/4.5.0_3/include",
+    "opencvLibDir": "/usr/local/Cellar/opencv/4.5.0_3/lib",
+    "opencvBinDir": "/usr/local/Cellar/opencv/4.5.0_3/bin"
+  }
+}
