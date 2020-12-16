@@ -1,6 +1,6 @@
 const cv = require('opencv4nodejs');
 const log = require('single-line-log').stdout;
-const { convert } = require('./convert.js');
+const { convertMatrix } = require('./convert.js');
 
 const grabFrames = (videoFile, delay, onFrame) => {
   const cap = new cv.VideoCapture(videoFile);
@@ -26,6 +26,6 @@ const grabFrames = (videoFile, delay, onFrame) => {
 const src = 0;
 
 grabFrames(src, 1, frame => {
-  const text = convert(frame);
+  const text = convertMatrix(frame);
   log(text);
 });

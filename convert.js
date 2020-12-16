@@ -23,6 +23,8 @@ const convert = (frame) => {
   return text;
 }
 
+const convertMatrix = (frame) => (`\x1b[40m\x1b[32m${convert(frame)}\x1b[0m`);
+
 const convertJPG = (rawImageData) => {
   const rows = rawImageData.height;
   const cols = rawImageData.width;
@@ -47,4 +49,5 @@ const convertJPG = (rawImageData) => {
 module.exports = {
   convert,
   convertJPG,
+  convertMatrix,
 }

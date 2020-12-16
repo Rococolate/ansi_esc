@@ -46,6 +46,12 @@ $ node run.js
 $ node index.js 
 ```
 
+## 看看你的终端对 SGR 的支持
+
+```bash
+$ node sgr.js
+```
+
 ## 博客
 
 [ANSI转义序列的应用]http://rococolate.github.io/blog/2020/11/25/ansi-esc.html
